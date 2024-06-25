@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIVY CRM Webapp</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+
+    <div class="cookie-popup" id="cookiePopup">
+        <div class="initial-content">
+            <h2 id="cookietitle">We use cookies</h2>
+            <p id="cookietext">This website users cookies to enhance your browsing experience on our website, to show you personalized content and targeted ads, to analyze our website traffic, and to understand where our visitors are coming from. You can manage your preferences by clicking “Change Preference.”.</p>
+            <button onclick="acceptCookies()">Accept all</button>
+            <a id="preferencesLink" onclick="showPreferences()">CHANGE PREFERENCES</a>
+        </div>
+        <div class="preferences" id="preferences">
+            <h3>Necessary</h3>
+            <img src="./assets/vector.png" id="vector1">
+            <p>Necessary cookies are required to help a website useble by enabling core functions and access to secure areas of the website. The website cannot be function properly without these cookies and they are enabled by default and cannot be dissabled. <br><span>Cookies Detail</span>.</p>
+            <h3>Analytics</h3>
+            <img src="./assets/vector.png" id="vector2">
+            <p>Analytics cookies help website to understrand how visitors interact through the website. These cookies help to improve user experiences by collecting and reporting information.</p>
+            <h3>Marketing</h3>
+            <img src="./assets/vector.png" id="vector3">
+            <p>Marketing cookies are used to track visitors across websites to display relevant advertisements for the individual user and thereby more valuable for publishers and third party advertisers. <span>Cookie Detail</span>.</p>
+            <button class="confirm-btn" onclick="confirmPreferences()">Confirm My Choices</button>
+        </div>
+    </div>
+
+
+    <div class="login-container">
+        <div class="header-image">
+            <img src="./assets/Rectangle 12629.png" alt="">
+        </div>
+        <div class="login-content">
+            <div class="logo">
+                <img src="./assets/Logo.png" id="logo" alt="Logo">
+            </div>
+            <h1>GIVY CRM WEBAPP <br> @Givy</h1>
+            <p>The CRM platform that is simple to set up and easy to use. Givy lets you handle all your customers, campaigns, and coupons in one place.</p>
+            <form>
+                <div class="input-group">
+                    <label for="email"><i class="fas fa-envelope"></i></label>
+                    <input type="text" id="email" placeholder="Phone number or Email">
+                </div>
+                <div class="input-group">
+                    <label for="password"><i class="fas fa-lock"></i></label>
+                    <input type="password" id="password" placeholder="Password">
+                </div>
+                <div class="options">
+                    <label>
+                        <input type="checkbox" id="remember">
+                        Remember
+                    </label>
+                    <a href="#" class="forgot-password">Forgot Password</a>
+                </div>
+                <button type="button" onclick="Login(event)" class="btn">Sign In</button>
+                <button type="button" class="btn create-membership">Create membership</button>
+                <div id="resultado" class="result"></div>
+            </form>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

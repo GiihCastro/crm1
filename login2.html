@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Info</title>
+    <link rel="stylesheet" href="login2.css">
+    <script src="script2.js"></script>
+</head>
+<body>
+
+    <div class="login-container">
+        <h1>MEMBERSHIP INFO</h1>
+        
+        <form>
+            <div>
+                
+                <input type="text" id="firstName" name="firstName" placeholder="First Name">
+            </div>
+            <div>
+                
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+            </div>
+            <div>
+                
+                <input type="email" id="email" name="email" placeholder="Email">
+            </div>
+            <div>
+                
+                <div style="display: flex;">
+                    <select id="countryCode" name="countryCode" style="flex: 1; margin-right: 5px;">
+                        <option value="+1">+1</option>
+                        <option value="+44">+44</option>
+                        <option value="+55">+55</option>
+                        
+                    </select>
+                    <input type="text" id="phone" name="phone" placeholder="Phone Number" style="flex: 2;">
+                </div>
+            </div>
+            <div>
+                
+                <input type="password" id="password" name="password" placeholder="Password">
+            </div>
+            <button type="submit">Confirm</button>
+        </form>
+
+        <div id="errorMessage" style="color: red; margin-top: 10px; margin-bottom: 5px;"></div>
+        <div id="successMessage" style="color: #6F5FE7; margin-top: 10px; margin-bottom: 5px;"></div>
+
+        <div class="login-options">
+            <button type="button">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple">
+            </button>
+            <button type="button">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+            </button>
+            <button type="button">
+                <img src="./assets/icons8-gmail-48.png" alt="Gmail">
+            </button>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+
+</body>
+</html>
+ 

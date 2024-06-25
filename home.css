@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.cookie-popup {
+    position: fixed;
+    bottom: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 375px;
+    height: 261px;
+    max-width: 500px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: bottom 0.5s ease;
+}
+
+.cookie-popup.show {
+    bottom: 20px;
+}
+
+.cookie-popup h2 {
+    margin: 0;
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px; 
+    letter-spacing: -0.18px;
+}
+
+.cookie-popup p {
+    margin: 10px 0;
+    color: #333;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: -0.18px;
+}
+
+.cookie-popup button {
+    display: flex;
+    width: 343px;
+    height: 54px;
+    justify-content: center;
+    padding: 15px;
+
+    color: #FFF;
+    background-color: #6F5FE7;
+    border: none;
+    border-radius: 5px;
+
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.cookie-popup a {
+    display: block;
+    margin: 10px 25px 117px 90px;
+    color: #6F5FE7;
+
+    font-size: 14px;
+
+    font-weight: 400;
+    letter-spacing: -0.18px;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+.cookie-popup.fullscreen {
+    width: 375px;
+    height: 771px;
+    overflow-y: auto;
+    border-radius: 0;
+    transition: top 1.0s ease;
+}
+
+.preferences {
+    display: none;
+    margin-top: 26px;
+    margin-left: 16px;
+}
+
+.preferences.show {
+    display: block;
+}
+
+.preferences h3 {
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    width: 150px;
+    margin-right: 10px;
+    margin-top: 26px;
+
+}
+
+.preferences p {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 350px;
+}
+
+.preferences p span {
+    color: #6F5FE7;
+}
+
+.preferences img {
+    width: 42px;
+    height: auto; 
+    position: fixed;
+    left: 300px;
+    cursor: pointer;
+}
+
+#vector1 {
+    position: fixed;
+    bottom: 620px;
+}
+
+#vector2 {
+    position: fixed;
+    bottom: 465px;
+}
+
+#vector3 {
+    position: fixed;
+    bottom: 335px;
+}
+
+.preferences button {
+    display: block;
+    position: fixed;
+    right: 16px;
+    margin-top: 104px;
+
+}
+.confirm-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+.login-container {
+    background-color: #1c1c1c;
+    width: 375px;
+    height: 812px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.header-image img {
+    width: 100%;
+    display: block;
+}
+
+.login-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.logo img {
+    width: 50px;
+    margin: 10px 0;
+    position: relative;
+    bottom: 70px;
+    left: 220px;
+    margin-bottom: -60px;
+}
+
+h1 {
+    font-size: 22px;
+    margin: 10px 0;
+    margin-right: 50px;
+}
+
+p {
+    font-size: 14px;
+    margin: 5px 0;
+    margin-right: 50px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.input-group label {
+    color: #aaa;
+    margin-right: 10px;
+}
+
+.input-group input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 100%;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+}
+
+.options input {
+    margin-right: 5px;
+}
+
+
+.forgot-password {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6e44ff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.create-membership {
+    background-color: transparent;
+    border: 1px solid #6e44ff;
+}
+
+.create-membership:hover {
+    background-color: #6e44ff;
+}
+
+.btn:hover {
+    background-color: #5941a9;
+}
